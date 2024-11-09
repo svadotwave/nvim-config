@@ -1,5 +1,5 @@
 {
-  "LazyVim": { "branch": "main", "commit": "5efb88f44a03d0fd8ca3801067de904aecf7e86d" },
+  "LazyVim": { "branch": "main", "commit": "4876d1137d374af6f39661e402926220517ae4ab" },
   "alpha-nvim": { "branch": "main", "commit": "bf3c8bb8c02ed3d9644cc5bbc48e2bdc39349cd7" },
   "bufferline.nvim": { "branch": "main", "commit": "5cc447cb2b463cb499c82eaeabbed4f5fa6a0a44" },
   "lazy.nvim": { "branch": "main", "commit": "b1134ab82ee4279e31f7ddf7e34b2a99eb9b7bc9" },
@@ -12,5 +12,5 @@
   "nvim-web-devicons": { "branch": "master", "commit": "19d257cf889f79f4022163c3fbb5e08639077bd8" },
   "onedark": { "branch": "master", "commit": "fae34f7c635797f4bf62fb00e7d0516efa8abe37" },
   "plenary.nvim": { "branch": "master", "commit": "2d9b06177a975543726ce5c73fca176cedbffe9d" },
-  "snacks.nvim": { "branch": "main", "commit": "cc80f6dc1b7a286cb06c6321bfeb1046f7a59418" }
+  "snacks.nvim": { "branch": "main", "commit": "7f9f691a12d0665146b25a44323f21e18aa46c24" }
 }
