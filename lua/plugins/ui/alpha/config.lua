@@ -1,30 +1,15 @@
-local alpha = require("alpha")
+local M = {}
 local dashboard = require("alpha.themes.dashboard")
+local section = require("plugins.ui.alpha.sections")
 
--- Set header
-dashboard.section.header.val = {
-  "                                                     ",
-  "  ███╗   ██╗███████╗ ██████╗ ██╗   ██╗██╗███╗   ███╗ ",
-  "  ████╗  ██║██╔════╝██╔═══██╗██║   ██║██║████╗ ████║ ",
-  "  ██╔██╗ ██║█████╗  ██║   ██║██║   ██║██║██╔████╔██║ ",
-  "  ██║╚██╗██║██╔══╝  ██║   ██║╚██╗ ██╔╝██║██║╚██╔╝██║ ",
-  "  ██║ ╚████║███████╗╚██████╔╝ ╚████╔╝ ██║██║ ╚═╝ ██║ ",
-  "  ╚═╝  ╚═══╝╚══════╝ ╚═════╝   ╚═══╝  ╚═╝╚═╝     ╚═╝ ",
-  "                                                     ",
-}
+M.opts = function()
 
--- Set menu
-dashboard.section.buttons.val = {
-  dashboard.button("e", "  > New File", "<cmd>ene<CR>"),
-  dashboard.button("SPC ee", "  > Toggle file explorer", ""), -- neo-tree
-  dashboard.button("SPC ff", "󰱼  > Find File", ""), -- telescope find file
-  dashboard.button("SPC fg", "  > Find Word", ""), -- telescope live gre
-  dashboard.button("SPC wr", "󰁯  > Restore Session For Current Directory", ""), -- manager session - persistence | obsession | session
-  dashboard.button("q", "  > Quit NVIM", "<cmd>qa<CR>"),
-}
+  -- Asignamos los valores
+  dashboard.section.header.val = section.header
+  dashboard.section.buttons.val = section.buttons
 
--- Send config to alpha
-alpha.setup(dashboard.opts)
+  -- Devolvemos las opciones del dashboard
+  return dashboard.config
+end
 
--- Disable folding on alpha buffer
-vim.cmd([[autocmd FileType alpha setlocal nofoldenable]])
+return M

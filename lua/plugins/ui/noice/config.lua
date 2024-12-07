@@ -1,7 +1,7 @@
 local M = {}
 
-M.setup = function()
-  require("noice").setup({
+M.opts = function()
+  return {
     lsp = {
       progress = {
         enabled = false, -- Desactiva mensajes de progreso LSP
@@ -42,8 +42,7 @@ M.setup = function()
     history = {
       enabled = true, -- Asegura que se registre en el historial
     },
-  })
+  }
 end
 
 return M
-

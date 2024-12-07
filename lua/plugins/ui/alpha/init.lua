@@ -1,7 +1,10 @@
 return {
   "goolord/alpha-nvim",
   event = "VimEnter",
-  config = function()
-    require("plugins.ui.alpha.config")
+  opts = function()
+    return require("plugins.ui.alpha.config").opts()
+  end,
+  config = function(_, opts)
+    require("alpha").setup(opts)
   end,
 }
