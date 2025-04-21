@@ -1,19 +1,24 @@
 local M = {}
+local shared_sections = require("plugins.ui.lualine.sections")
 
-M.opts = function()
- return {
+-- Función opts
+function M.opts()
+  return {
     options = {
-      theme = "auto", -- Tema base
-      section_separators = { left = "", right = "" },
-      component_separators = { left = "", right = "" },
+      theme = "catppuccin",
+      globalstatus = true,
+      component_separators = { "", "" },
+      section_separators = { left = "", right = "" },
+      disabled_filetypes = {
+        statusline = { "alpha" }, -- opcional: evita mostrar en estos
+      },
     },
-    sections = {
-      lualine_a = { "mode" },
-      lualine_b = { "branch", "diff" },
-      lualine_c = { "filename" },
-      lualine_x = { "encoding", "fileformat", "filetype" },
-      lualine_y = { "progress" },
-      lualine_z = { "location" },
+    sections = shared_sections,
+    extensions = {
+      {
+        filetypes = { "neo-tree" },
+        sections = shared_sections,
+      },
     },
   }
 end
