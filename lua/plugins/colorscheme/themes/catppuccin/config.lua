@@ -25,8 +25,10 @@ M.opts = function()
       custom_highlights = {
         WinSeparator = { fg = "#7d899f", bg = "NONE" }, -- #24273a
         NeoTreeWinSeparator = { fg = "#7d899f", bg = "NONE" },
+        NeoTreeNormal = { bg = "NONE" }, -- Cambia el color de fondo
         NeoTreeNormalNC = { bg = "NONE" }, -- Cambia el color de fondo
         NeoTreeEndOfBuffer = { fg = "NONE", bg = "NONE" }, -- Cambia el color de la zona vacía al final del buffer
+        NeoTreeMessage = { fg = "#a6adc8", bg = "NONE", italic = true }, -- texto de mensajes (hidden)
 
         -- Colores para Telescope basados en Noice (Catppuccin Macchiato)
         TelescopeBorder = { fg = "#b7bdf8", bg = "#24273a" }, -- Borde
