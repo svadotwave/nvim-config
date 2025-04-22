@@ -14,6 +14,12 @@ M.opts = function()
       hover = {
         silent = true, -- No muestra mensaje si hover no está disponible
       },
+      signature = {
+        enabled = true,
+      },
+      message = {
+        enabled = false,
+      },
     },
     routes = {
       {
