@@ -1,5 +1,5 @@
 local M = {}
-local shared_sections = require("plugins.ui.lualine.sections")
+local shared_sections = require("plugins.editor.lualine.sections")
 
 -- Función opts
 function M.opts()
