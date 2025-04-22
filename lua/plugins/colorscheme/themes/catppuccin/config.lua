@@ -23,7 +23,7 @@ M.opts = function()
         },
       },
       custom_highlights = {
-        WinSeparator = { fg = "#7d899f", bg = "NONE" }, -- #24273a
+        WinSeparator = { fg = "#7f849c", bg = "NONE" }, -- overlay1
         NeoTreeWinSeparator = { fg = "#7d899f", bg = "NONE" },
         NeoTreeNormal = { bg = "NONE" }, -- Cambia el color de fondo
         NeoTreeNormalNC = { bg = "NONE" }, -- Cambia el color de fondo
