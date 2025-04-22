@@ -1,7 +1,7 @@
 -- Componente personalizado para LSP
 local lsp = {
   function()
-    local clients = vim.lsp.get_active_clients({ bufnr = 0 })
+    local clients = vim.lsp.get_clients({ bufnr = 0 })
     local buf_client_names = {}
     if #clients > 0 then
       for _, client in pairs(clients) do
@@ -13,7 +13,7 @@ local lsp = {
     end
   end,
   color = function()
-    local clients = vim.lsp.get_active_clients({ bufnr = 0 })
+    local clients = vim.lsp.get_clients({ bufnr = 0 })
     if #clients > 0 then
       return { fg = "#a6da95" }
     else
@@ -27,7 +27,7 @@ local formatter = {
   function()
     local bufr = vim.api.nvim_get_current_buf()
     local fmt = require("conform").list_formatters(bufr)
-    local clients = vim.lsp.get_active_clients({ bufnr = 0 })
+    local clients = vim.lsp.get_clients({ bufnr = 0 })
 
     if #clients > 0 then
       for _, client in ipairs(clients) do

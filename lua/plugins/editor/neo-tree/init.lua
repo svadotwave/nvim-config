@@ -6,7 +6,7 @@ return {
     "MunifTanjim/nui.nvim",
   },
   opts = function()
-    return require("plugins.editor.neo-tree.config").opts() 
+    return require("plugins.editor.neo-tree.config").opts()
   end,
   config = function(_, opts)
     require("neo-tree").setup(opts)
