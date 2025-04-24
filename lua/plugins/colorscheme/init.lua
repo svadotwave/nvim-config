@@ -1,11 +1,11 @@
 return {
-  "LazyVim/LazyVim",                            -- El plugin LazyVim
+  "LazyVim/LazyVim",                        -- El plugin LazyVim
   dependencies = {
-    require("plugins.colorscheme.install"),     -- Instala los temas desde install.lua
+    require("plugins.colorscheme.install"), -- Instala los temas desde install.lua
   },
   opts = {
     -- Configuración del esquema de colores, puedes poner un tema predeterminado aquí
-    colorscheme = "catppuccin",   -- Tema predeterminado para LazyVim
+    colorscheme = "catppuccin", -- Tema predeterminado para LazyVim
   },
   config = function()
     -- Aplica el tema manualmente después de que LazyVim cargue

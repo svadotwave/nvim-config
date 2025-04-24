@@ -11,7 +11,7 @@ m.on_attach = function(client, bufnr)
   local bufopts = { noremap = true, silent = true, buffer = bufnr }
   -- require("snacks").notify.info("on_attach", { timeout = 3000 })
 
-  -- Deshabilitar formateo para algunos clientes LSP
+  -- Deshabilitar formateo (default) para algunos clientes LSP (custom_formatters)
   if vim.tbl_contains(custom_formatters, client.name) then
     client.server_capabilities.documentFormattingProvider = false
   end
